@@ -21,6 +21,16 @@
             required #email="ngModel">
           <div [hidden]="!email.pristine" class="alert alert-danger">Email is required</div>
         </div>
+        <div class="form-group">
+          <label for="msisdn">Msisdn</label>
+          <input type="text" [(ngModel)]="user.msisdn" 
+            class="form-control"
+            id="msisdn"
+            name="msisdn"
+            placeholder="Enter your msisdn "
+            required #msisdn="ngModel">
+          <div [hidden]="!msisdn.pristine" class="alert alert-danger">Msisdn is required</div>
+        </div>
         <button type="submit" [disabled]="!userForm.form.valid" 
           class="btn btn-info">Submit</button>
       </form>
