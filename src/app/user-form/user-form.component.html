@@ -27,7 +27,7 @@
             class="form-control"
             id="msisdn"
             name="msisdn"
-            placeholder="Enter your msisdn "
+            placeholder="Enter your phone "
             required #msisdn="ngModel">
           <div [hidden]="!msisdn.pristine" class="alert alert-danger">Phone is required</div>
         </div>
@@ -38,7 +38,7 @@
             id="profession"
             name="profession"
             placeholder="Enter your profession "
-            required #msisdn="ngModel">
+            required #profession="ngModel">
           <div [hidden]="!profession.pristine" class="alert alert-danger">Profession is required</div>
         </div>
         <button type="submit" [disabled]="!userForm.form.valid" 
